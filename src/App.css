@@ -1,4 +1,14 @@
-h1{
-  color: green;
-
+h1{ 
+  color:brown;
+}
+.name{
+  color: red;
+  background-color: aquamarine;
+  padding: 20px;
+}
+.age{
+  margin: 10px 0px;
+  color: rgb(4, 0, 255);
+  background-color: rgb(189, 255, 127);
+  padding: 20px;
 }
