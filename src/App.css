@@ -1,14 +1,32 @@
-h1{ 
-  color:brown;
+body{
+  margin: 0px;
+  padding: 0px;
+
 }
-.name{
-  color: red;
-  background-color: aquamarine;
+.header{
+  margin: 0px;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(47, 2, 88);
+  color:  white;
   padding: 20px;
 }
-.age{
-  margin: 10px 0px;
-  color: rgb(4, 0, 255);
-  background-color: rgb(189, 255, 127);
-  padding: 20px;
+.workers-area{
+  display: flex;
+  background-color: antiquewhite;
+  flex-direction: column;
+}
+.workers{
+  display: flex;
+  flex-direction: row;
+}
+.w-name{
+  color: rgb(47, 2, 88);
+  text-transform: uppercase;
+padding:5px 20px;
+}
+.w-age{
+  color: rgb(85, 0, 0);
+  padding:5px 20px;
+
 }

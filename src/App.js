@@ -1,51 +1,33 @@
 import React, { Component } from 'react';
-import "./App.css"
-import Age  from "./component/Age"
-class App extends Component {
-  state = [
-    { name: "ali", age: 26 },
-    { name: "asghar", age: 27 },
-    { name: "asif", age: 28 },
-    { name: "ahmed", age: 29 },
-    { name: "waqas", age: 20 },
-    { name: "ali", age: 26 },
-    { name: "asghar", age: 27 },
-    { name: "asif", age: 28 },
-    { name: "ahmed", age: 29 },
-    { name: "waqas", age: 20 },
-    { name: "ali", age: 26 },
-    { name: "asghar", age: 27 },
-    { name: "asif", age: 28 },
-    { name: "ahmed", age: 29 },
-    { name: "waqas", age: 20 },
-    { name: "ali", age: 26 },
-    { name: "asghar", age: 27 },
-    { name: "asif", age: 28 },
-    { name: "ahmed", age: 29 },
-    { name: "waqas", age: 20 },
-    { name: "ali", age: 26 },
-    { name: "asghar", age: 27 },
-    { name: "asif", age: 28 },
-    { name: "ahmed", age: 29 },
-    { name: "waqas", age: 20 },
+import "./App.css";
+import Worker from "./component/Worker"
+import Header from './component/Header';
 
-  ]
+class App extends Component {
+  state = {
+  worker: [ 
+    { id: "1", name: "ali", age: 26 },
+    { id: "2", name: "asghar", age: 27 },
+    { id: "3", name: "asif", age: 28 },
+    { id: "4", name: "ahmed", age: 29 },
+    { id: "5", name: "waqas", age: 33 },
+  ],
+
+
+  }
+
   render() {
-    var b = 0;
+
+
+
     return (
-     <div>
-        <h1>HP Super Market</h1>
-        {
-          this.state.map(function (item) {
-            return (
-              <div>
-                <div className="name" >your NAME is = {item.name} </div>
-                <Age />
-              </div>
-            )
-          })
-        }
-    </div>
+      <div>
+        <Header />
+
+        <Worker workers={this.state.worker} />
+        
+
+      </div>
     )
   }
 }
