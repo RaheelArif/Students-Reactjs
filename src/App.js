@@ -1,33 +1,32 @@
 import React, { Component } from 'react';
 import "./App.css";
-import Worker from "./component/Worker"
 import Header from './component/Header';
+import {BrowserRouter , Route } from "react-router-dom"
+import  Books from "./component/books"
+import Cosmatics from './component/cosmatics';
+import Foods from './component/foods';
+import Drinks from './component/drinks';
 
 class App extends Component {
-  state = {
-  worker: [ 
-    { id: "1", name: "ali", age: 26 },
-    { id: "2", name: "asghar", age: 27 },
-    { id: "3", name: "asif", age: 28 },
-    { id: "4", name: "ahmed", age: 29 },
-    { id: "5", name: "waqas", age: 33 },
-  ],
 
 
-  }
+  
 
   render() {
 
 
 
     return (
-      <div>
+      <BrowserRouter>
         <Header />
-
-        <Worker workers={this.state.worker} />
+        <Route path="/foods" component={Foods} />
+        <Route path="/books" component={Books} />
+        <Route path="/cosmatics" component={Cosmatics} />
+        <Route path="/drinks" component={Drinks} />
         
 
-      </div>
+     
+      </BrowserRouter>
     )
   }
 }
