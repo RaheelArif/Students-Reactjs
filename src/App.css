@@ -63,3 +63,19 @@ padding: 10px;
   color: brown;
   transition: 1s;
 }
+.logo{
+  color: white;
+  text-decoration: none;
+  text-shadow: 5px 5px 5px  brown;
+}
+.menu-area{
+  display: flex;
+  background-color: bisque;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.menu{
+  display: flex;
+  background-color: aqua;
+}
