@@ -40,10 +40,16 @@ table{
   width: 100%px;
   
 }
+.abc{
+color: antiquewhite;
+background-color: blue;
+
+}
 table th{
   background-color: brown;
   color: white;
   text-align: center;
+  padding: 10px;
 }
 .links-container{
   display: flex;

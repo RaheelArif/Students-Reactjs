@@ -3,6 +3,13 @@ import {Link} from "react-router-dom";
 import "../App.css";
 
 class Header extends Component{
+    state={
+        name : "react.js"
+    }
+  sendData=() => {
+
+      this.props.xyz(this.state.name)
+  }
     render(){
         return(
             <div className="header">
@@ -14,6 +21,7 @@ class Header extends Component{
                 <Link className="links" to="/workers">workers</Link>
                 <Link className="links" to="/drinks">drinks</Link>
                 </div>
+                <button onClick={this.sendData}>send data to APp.js</button>
             </div>
         )
     }

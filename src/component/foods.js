@@ -17,13 +17,7 @@ handleChange =(e) => {
 }
 
 addItem = (e) => {
-    let newStudent = {
-        firstName: this.state.firstName,
-        lastName: this.state.lastName
-    }
-    this.setState({
-      student: [...this.state.student , newStudent]
-       })
+this.props.new("abc")
 
 }
 
@@ -37,7 +31,7 @@ addItem = (e) => {
                 <input name="firstName" onChange={this.handleChange} type="text" />
                 <input name="lastName" onChange={this.handleChange} type="text" />
                 <button onClick={this.addItem}>new name</button>
-     <h1>{this.state.firstName}</h1>
+                <h1>{this.state.firstName}</h1>
                 {
                     this.state.student.map(item => {
                         return (
