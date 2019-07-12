@@ -1,8 +1,10 @@
 import React,{Component} from "react";
 import "../App.css";
+import {connect} from "react-redux"
 
 class Home extends Component{
     render(){
+        console.log(this.props.name)
         return(
             <div>
                 <h1 >this is home page</h1>
@@ -12,4 +14,9 @@ class Home extends Component{
         )
     }
 }
-export default Home;
+const mapStateToProps= (state)=> {
+   return {
+   name : state.StudentReducer
+   }
+}
+export default connect(mapStateToProps)(Home) ;
