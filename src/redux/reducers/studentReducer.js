@@ -1,6 +1,8 @@
 const initState = {
-    name: "raheel",
-    age: "18"
+    student : [
+        {   name: "raheel",age: "18"},
+        {  name: "ali", age: "18"}
+    ]
 }
 const StudentReducer = (state = initState , action) => {
     switch (action.type) {
