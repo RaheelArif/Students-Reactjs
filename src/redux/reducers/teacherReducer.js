@@ -1,3 +1,4 @@
+import TeacherAction from "../actions/teacherAction"
 const initState = {
     teacher: [
         {name: "ahmed", age : "30"}
@@ -5,11 +6,10 @@ const initState = {
 }
 const TeacherReducer = (state = initState , action) => {
     switch(action.type){
-        case "ADD_TEACHER":
+        case TeacherAction.ADD_TEACHER :
            return {
             ...state,
-            name: "ASGHAR",
-            age:40
+            teacher : [...state.teacher, action.payload]
            };
            case "DELETE_TEACHER":
                 return{
