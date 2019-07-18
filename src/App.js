@@ -7,7 +7,7 @@ import Cosmatics from './component/cosmatics';
 import Foods from './component/foods';
 import Drinks from './component/Drinks';
 import Home from "./component/home"
-
+import Material from "./component/material"
 class App extends Component {
   state = {
     name: ""
@@ -25,6 +25,7 @@ class App extends Component {
 
     return (
       <BrowserRouter>
+      <Material />
         <Header xyz={(a) => { this.abc(a) }} />
         <h1 className="abc">{this.state.name}</h1>
         <Route exact path="/" component={Home} />
@@ -39,6 +40,7 @@ class App extends Component {
     )
   }
 }
+
 
 
 export default App;

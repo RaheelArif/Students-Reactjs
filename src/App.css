@@ -85,3 +85,10 @@ padding: 10px;
   display: flex;
   background-color: aqua;
 }
+.app-bar{
+  background-color: antiquewhite !important;
+}
+.logo{
+  background-color: blue;
+  color: white;
+}
